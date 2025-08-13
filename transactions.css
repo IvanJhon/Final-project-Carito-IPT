@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F9FD;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar .fa-search {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.search-bar input {
+    padding: 10px 10px 10px 36px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    width: 250px;
+}
+
+.filters-btn, .add-manual-btn {
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filters-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+.add-manual-btn {
+    background-color: #2F80ED;
+    color: #ffffff;
+}
+
+main {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+    white-space: nowrap;
+}
+
+thead th {
+    color: #888;
+    font-weight: 500;
+}
+
+tbody tr {
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #F8F9FD;
+}
+
+td input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.status-pending .status-dot {
+    background-color: #F2994A;
+}
+
+.status-pending {
+    color: #F2994A;
+}
+
+.status-completed .status-dot {
+    background-color: #27AE60;
+}
+
+.status-completed {
+    color: #27AE60;
+}
+
+.status-in-progress .status-dot {
+    background-color: #1976d2;
+}
+
+.status-in-progress {
+    color: #1976d2;
+}
+
+.status-overdue .status-dot {
+    background-color: #d32f2f;
+}
+
+.status-overdue {
+    color: #d32f2f;
+}
+
+.importance {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.importance-high {
+    background-color: #FBE9E7;
+    color: #D32F2F;
+}
+
+.importance-medium {
+    background-color: #FFF3E0;
+    color: #F57C00;
+}
+
+.importance-low {
+    background-color: #E8F5E9;
+    color: #388E3C;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.payment-method .card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-method .card-info span {
+    line-height: 1.3;
+}
+
+.payment-method .card-info .exp-date {
+    font-size: 12px;
+    color: #888;
+}
+
+.payment-method i {
+    font-size: 28px;
+}
+
+.actions-cell {
+    display: flex;
+    gap: 20px;
+}
+
+.actions-cell i {
+    cursor: pointer;
+    color: #888;
+    font-size: 16px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-btn.active {
+    background-color: #F8F9FD;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+.pagination span {
+    padding: 0 8px;
+}

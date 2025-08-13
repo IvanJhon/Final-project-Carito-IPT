@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions</title>
+    <link rel="stylesheet" href="transactions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Transactions</h1>
+            <div class="actions">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <button class="filters-btn">
+                    <i class="fas fa-filter"></i>
+                    Filters
+                </button>
+                <button class="add-manual-btn">
+                    + Add Manually
+                </button>
+            </div>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Option</th>
+                        <th>Date</th>
+                        <th>Task Code</th>
+                        <th>Department</th>
+                        <th>Personnel</th>
+                        <th>Task Timeline</th>
+                        <th>Importance</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="actions-cell">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </td>
+                        <td>2025-08-12</td>
+                        <td>TSK-001</td>
+                        <td>Engineering</td>
+                        <td>Jules Verne</td>
+                        <td>2025-08-10 to 2025-08-15</td>
+                        <td><span class="importance importance-high">High</span></td>
+                        <td class="status status-in-progress">
+                            <span class="status-dot"></span>
+                            In Progress
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="actions-cell">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </td>
+                        <td>2025-08-11</td>
+                        <td>TSK-002</td>
+                        <td>Marketing</td>
+                        <td>Jane Doe</td>
+                        <td>2025-08-11 to 2025-08-20</td>
+                        <td><span class="importance importance-medium">Medium</span></td>
+                        <td class="status status-in-progress">
+                            <span class="status-dot"></span>
+                            In Progress
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="actions-cell">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </td>
+                        <td>2025-08-05</td>
+                        <td>TSK-003</td>
+                        <td>HR</td>
+                        <td>John Smith</td>
+                        <td>2025-08-01 to 2025-08-10</td>
+                        <td><span class="importance importance-low">Low</span></td>
+                        <td class="status status-completed">
+                            <span class="status-dot"></span>
+                            Completed
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="actions-cell">
+                            <i class="fas fa-pencil-alt"></i>
+                            <i class="fas fa-trash-alt"></i>
+                        </td>
+                        <td>2025-08-01</td>
+                        <td>TSK-004</td>
+                        <td>Engineering</td>
+                        <td>Peter Jones</td>
+                        <td>2025-08-01 to 2025-08-05</td>
+                        <td><span class="importance importance-high">High</span></td>
+                        <td class="status status-overdue">
+                            <span class="status-dot"></span>
+                            Overdue
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <div class="pagination">
+                <button class="page-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <span>...</span>
+                <button class="page-btn">7</button>
+                <button class="page-btn">8</button>
+                <button class="page-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
